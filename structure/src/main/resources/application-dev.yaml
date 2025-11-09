@@ -1,0 +1,25 @@
+patriclee:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    host: localhost
+    port: 3306
+    database: nof0-backed-end
+    username: root
+    password: 123456
+    druid:
+      url-pattern: /druid/* # 配置监控后台访问路径
+      login-username: admin # 配置监控后台登录的用户名、密码
+      login-password: admin
+  redis:
+    host: release-redis
+    port: 6379
+    database: 3
+    password: 123456
+    lettuce:
+      pool:
+        max-active: 8 #最大连接数
+        max-idle: 8 #最大空闲连接数
+        min-idle: 0 #最小空闲连接
+        max-wait: 100ms #最大等待时长
+
+  salt: patriclee-salt
