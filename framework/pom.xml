@@ -15,6 +15,7 @@
         <module>common-redis-starter</module>
         <module>common</module>
         <module>common-translation-starter</module>
+        <module>common-ai-provider-starter</module>
     </modules>
 
 

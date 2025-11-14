@@ -87,6 +87,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.patriclee</groupId>
+            <artifactId>common-ai-provider-starter</artifactId>
+            <version>${revision}</version>
+        </dependency>
 
     </dependencies>
 </project>

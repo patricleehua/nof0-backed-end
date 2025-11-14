@@ -66,6 +66,17 @@ spring:
     init:
       mode: never
       schema-locations: classpath:sql/init.sql
+    #SpringAI 配置
+    chat:
+      memory:
+        repository:
+          jdbc:
+            mysql:
+              jdbc-url: jdbc:mysql://${patriclee.datasource.host}:${patriclee.datasource.port}/${patriclee.datasource.database}?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai
+              username: ${patriclee.datasource.username}
+              password: ${patriclee.datasource.password}
+              driver-class-name: ${patriclee.datasource.driver-class-name}
+              enabled: true
 
 
 # MyBatis配置
